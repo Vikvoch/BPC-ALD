@@ -81,6 +81,7 @@ Doplňuje o Quick sort se spanem (lze sortit jen určitou část vektoru)
 Využívá binární strom. Obdoba bubble sortu
 
 ## Merge sort
+Rozdělí pole na dvojice prvků, ve kterých provede třízení. Následně ze dvojic setřídí čvteřice...
 
 # TSet_unsorted_dynamic_array
 Postupně prochází list dokud nenarazí na hledaný prvek, nebo na konec
