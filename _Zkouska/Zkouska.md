@@ -1,4 +1,4 @@
-[<- Back](./README.md)
+[<- Back](../README.md)
 # Generic type shit
 ## Složitost algoritmu
 - Horní odhad složitosti $O(f(n))$: maximální možný čas, který bude algoritmus potřebovat
