@@ -9,3 +9,4 @@ Výpočet časové složitosti je závislý na počtu cyklů
 
 # [DATATYPES](datatypes.md)
 # [SORTS](sorts.md)
+# [SEARCHES](searches.md)
