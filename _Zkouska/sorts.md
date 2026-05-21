@@ -2,8 +2,10 @@
 # Třídění
 - **Stabilní třízení:** Stejné prvky jsou zachovány v půvpdním pořadí
 - **Nestabilní třízení:** Stejné prvky mohou být přehazovány<br><br>
-- **In-place:** třízení probíhá v prostoru paměti třízených dat
-- **Out-of-place:** je potřeba vnější<br><br>
+- **Přirozené:** třízení probíhá v prostoru paměti třízených dat
+- **Nepřirozené:** je potřeba vnější<br><br>
+- **In-place (in-situ):** potřebuje pouze malou paměť navíc, nezávisle na velikosti dat
+- **Out-of-place:** potřebuje vnější paměť<br><br>
 - **^=^:** operátor porovnání bez prohození
 - **^-^:** operátor porovnání s prohozením
 

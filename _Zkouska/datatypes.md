@@ -9,7 +9,8 @@
 - Lze jej přiřadit do proměnné
 - Lze jej předat jako parametr funkce
 - Lze jej vrátit z funkce
-- Lze je porovnávat
+- Může být členem dalšího/stejného datového typu
+- Lze s ním pracovat i beze jména (anonymě)
 
 ## Lineární datové typy
 ### Immutable pole
