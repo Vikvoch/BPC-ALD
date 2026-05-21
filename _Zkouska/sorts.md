@@ -8,7 +8,7 @@
 - **^-^:** operátor porovnání s prohozením
 
 ## Insert sort
-- Postupně posouváme každý prvek dokud není menší než předchozí prvek<br>
+- Postupně posouváme každý prvek dokud není větší než předchozí prvek<br>
 ```
 5|2 4 1 3
 ^-^
