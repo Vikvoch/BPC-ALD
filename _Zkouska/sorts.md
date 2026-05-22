@@ -2,8 +2,8 @@
 # Třídění
 - **Stabilní třízení:** Stejné prvky jsou zachovány v půvpdním pořadí
 - **Nestabilní třízení:** Stejné prvky mohou být přehazovány<br><br>
-- **Přirozené:** třízení probíhá v prostoru paměti třízených dat
-- **Nepřirozené:** je potřeba vnější<br><br>
+- **Přirozené:** pokud je pole setřízené, je časová složitost nižší (insert sort)
+- **Nepřirozené:** algoritmus vždy proběhne až do konce i pokud je pole setřízené (select sort)<br><br>
 - **In-place (in-situ):** potřebuje pouze malou paměť navíc, nezávisle na velikosti dat
 - **Out-of-place:** potřebuje vnější paměť<br><br>
 - **^=^:** operátor porovnání bez prohození
@@ -103,7 +103,7 @@
 
 ## Shell sort
 - Insert sort na steroidech
-- Oblasti se dělí na polovinu
+- Porovnává prvky ve vzálenosti délky / 2
 ```
 8 5 3 1|4 7 6 2
 ^-------^

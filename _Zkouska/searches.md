@@ -13,7 +13,7 @@
 
 ## Binary search tree
 - Využívá binární strom
-- Sestaví se z množiny *in-order* průchodem
+- Sestaví se ze setříděné množiny *in-order* průchodem
 - Výsledkem je, že pravá hodnota je vždy větší než levá
 - **Vyšší hledaná hodnota:** posun doleva dolů
 - **Nižší hledaná hodnota:** posun doprava dolů

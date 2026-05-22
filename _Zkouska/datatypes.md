@@ -5,7 +5,7 @@
 - Mutable = v průběhu lze přidávat/odebírat<br><br>
 - Ordered
 - Unordered
-### First calss citizen
+### First class citizen
 - Lze jej přiřadit do proměnné
 - Lze jej předat jako parametr funkce
 - Lze jej vrátit z funkce
@@ -22,7 +22,7 @@
 ```
 struct TStack {
 	size_t size;
-	int values[MAXCOUNT];
+	int *values;
 };
 ```
 - Vytvářeno dynamickou alokací paměti
@@ -35,7 +35,7 @@ struct TStack {
 #define LOWER_RESIZE
 struct TStack {
 	size_t size;
-	int values[MAXCOUNT];
+	int *values;
 };
 ```
 - Vytvářeno dynamickou alokací paměti
@@ -54,7 +54,7 @@ struct linkedList {
 - Je potřeba znát adresu prvního nodu
 - Je možné mít i odkaz na předchozí
 - Práce je složitější - nemáme přístup k libovolnému prvku
-- Vhodné pokud budeme častu přídávat/odebírat hodnoty uprostřed<br>
+- Vhodné pokud budeme často přídávat/odebírat hodnoty uprostřed<br>
 
 ![](linkedList.png)
 
@@ -98,9 +98,23 @@ struct circularBuffer {
 
 ### Průchod stromem
 - **Do šířky:** jde po vrstvách zleva
-- **Pre-order:** jde po uzlech zvrchu a zleva
-- **In-order:** jde po uzlech zleva a zvrchu, dá setřízenou posloupnost
-- **Post-order:** jde po uzlech zleva a zespodu<br>
+- **Pre-order:** jde po uzlech zvrchu a zleva v (začíná nahoře a vždycky odbočuje vlevo, vrací se na poslení odbočku)
+- **In-order:** jde po uzlech zleva a zvrchu (na nejlevějším prvku jde L->kořen->R), dá setřízenou posloupnost
+- **Post-order:** jde po uzlech zleva a zespodu (na nejlevějším prvku, nejprve dolů, pak vpravo, poslení možnost nahoru)<br>
+```
+      6
+     / \
+    2   7
+   / \
+  1   4
+     / \
+    3   5
+
+Do šířky:   6 2 7 1 4 3 5
+Pre-order:  6 2 1 4 3 5 7
+In-order:   1 2 3 4 5 6 7
+Post-order: 1 3 5 4 2 7 6
+```
 ![](treeTraverse.png)
 
 ### Binární strom
